@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="customlistview.magadistudio.com.keepnotes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mainicon2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayNotesActivity"
+            android:label="@string/title_activity_display_notes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NoteDetailActivity"
+            android:label="@string/title_activity_note_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
