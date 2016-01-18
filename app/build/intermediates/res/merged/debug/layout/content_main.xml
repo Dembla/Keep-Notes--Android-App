@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fefefe"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="customlistview.magadistudio.com.mywishlist.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+
+    <TextView
+        android:background="#ffff"
+        android:id="@+id/titleEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/wishEditText"
+        android:hint="Write Note here"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/titleEditText"
+        android:background="#ffffff"
+        android:gravity="start"
+        android:layout_width="300dp"
+        android:layout_height="200dp" />
+
+    <ImageButton
+        android:id="@+id/enterNoteImageID"
+        android:layout_toLeftOf="@+id/wishEditText"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/roundbutton"
+        android:src="@drawable/ic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageButton
+        android:id="@+id/editOld"
+        android:src="@drawable/ic_editold"
+        android:background="@drawable/roundbutton"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/wishEditText"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:src="@drawable/ic_addnew"
+        android:background="@drawable/roundbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="230dp"
+
+        android:layout_below="@+id/wishEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/editOldTextView"
+        android:text="Edit Old Note"
+        android:layout_below="@id/editOld"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/saveButtonTextView"
+        android:text="Add New"
+        android:textSize="20sp"
+        android:layout_below="@id/saveButton"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
